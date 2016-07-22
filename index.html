@@ -19,10 +19,12 @@
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css"/>
+        <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -46,6 +48,8 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+                <!-- quick and dirty link to the tab panel
+                If time TODO js event listeners to open the correct tab -->
                 <li><a href="#tab-link">Description</a></li>
                 <li><a href="#tab-link">History</a></li>
                 <li><a href="#tab-link">Stats</a></li>
@@ -220,7 +224,8 @@
         <h2>Map</h2>
         <!-- TODO: Use Leaflet.js to add a map showing Mt. Rainier's location
                     http://leafletjs.com/examples/quick-start.html -->
-        <div id="map-container"></div>
+        <div id="map-container">
+        </div>
       </div>
 
       <div id="links">
