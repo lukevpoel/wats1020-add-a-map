@@ -35,13 +35,12 @@ $( document ).ready(function(){
       "Satellite": satLayer,
       "Terrain View": terrainLayer,
       "Open Street Maps": osmLayer
-  }
+  };
 
   //open the map
-  /** tried another method for adding markers that wasn't working. Code is here in case I can work on it later
   L.control.layers(mapLayers).addTo(map);
   satLayer.addTo(map);
-
+  /** tried another method for adding markers that wasn't working. Code is here in case I can work on it later
   for ( var i=0; i < markers.length; ++i )
   {
      L.marker( [markers[i].lat, markers[i].lng] )
@@ -60,6 +59,5 @@ $( document ).ready(function(){
 
   var muirMarker = L.marker([46.835446, -121.731636]).addTo(map);
   paradiseMarker.bindPopup("Welcome to Camp Muir!</b><br>Camp Muir represents a dividing line: this is as high as you can go on Mount Rainier without a climbing permit. From here, you get a close-up view that few visitors to the park ever see: hanging glaciers, towering seracs, yawning crevasses, and thundering rockfall as the ridges of ash and breccia high above melt and crumble in the heat of the sun.");
-  
-})
 
+});
