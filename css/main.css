@@ -3,3 +3,25 @@
    ========================================================================== */
 #carousel-rainier-pics.carousel.slide {width: 100%; max-width: 1000px; !important}
 #map-container { height: 600px; }
+
+#stats.dl {
+  width: 100%;
+  overflow: hidden;
+  background: #ff0;
+  padding: 0;
+  margin: 0
+}
+#stats.dt {
+  float: left;
+  width: 50%;
+  background: #cc0;
+  padding: 0;
+  margin: 0
+}
+#stats.dd {
+  float: left;
+  width: 50%;
+  background: #dd0
+  padding: 0;
+  margin: 0
+}
